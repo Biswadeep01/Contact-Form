@@ -1,0 +1,129 @@
+body{
+  background-color: #272525;
+}
+canvas {
+  display: block;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  z-index: -1;
+  background-color: #272525;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+h3{
+  margin: 10px 0px 20px 0px;
+  color: #ccc;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+.form-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffd8d8;
+  z-index: 10;
+}
+.policy{
+  max-width: 50%;
+  padding-right: 10%;
+}
+#contactForm {
+    background-color: #4b49493a;
+    color: #ffd8d8;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.445);
+    width: 100%;   
+  }
+  
+  #contactForm label {
+    font-weight: bold;
+  }
+  
+  #contactForm input[type="text"],
+  #contactForm input[type="tel"],
+  #contactForm input[type="email"],
+  #contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  #contactForm textarea {
+    height: 150px;
+  }
+  
+  #contactForm input[type="submit"] {
+    background-color: #bd1550;
+    color: rgba(255, 255, 255, 0.438);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Make the button full width */
+  }
+  
+  #contactForm input[type="submit"]:hover {
+    background-color: #e61f65;
+    text-decoration: none;
+  }
+  
+  .choice{
+    justify-content: center;
+  }
+
+  
+  /* Responsive adjustments */
+  @media screen and (min-width: 768px) {
+    /* Centered column on larger screens */
+    .container {
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form-section{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .policy{
+      text-align: center;
+      justify-content: center;
+    }
+  
+    #contactForm {
+        width: 80%; /* Adjust the width as needed */
+    }
+    
+  }
+  
+  @media screen and (min-width: 992px) {
+    #contactForm {
+        width: 70%; /* Adjust the width as needed */
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    #contactForm {
+        width: 60%; /* Adjust the width as needed */
+    }
+  }
